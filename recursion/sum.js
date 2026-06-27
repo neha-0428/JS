@@ -16,13 +16,24 @@ console.log(parameterizedSum(5, 0));
 function functionalSum(n) {
 
     if (n < 1) {
-        return n
+        return 0
     }
-
-
 
     return n + functionalSum(n - 1)
 }
 
 console.log(functionalSum(3));
 console.log(functionalSum(5));
+
+
+function factorial(n) {
+
+    if (n < 1) {
+        return 1
+    }
+
+    return n * factorial(n - 1)
+}
+
+console.log(factorial(3));
+console.log(factorial(5));
